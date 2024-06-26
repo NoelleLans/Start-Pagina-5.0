@@ -138,10 +138,10 @@ function showAllLinks(key)
 	switch(key)
 	{
 		case "google":
-			addLink("Google", "Google", "https://www.google.nl/");
+			addLink("google", "Google", "https://www.google.nl/");
 			addLink("Vertalen", "Google Translate", "https://translate.google.nl/");
-			addLink("googleMaps", "Google Maps", "https://www.google.nl/maps");
-			addLink("Drive", "Google Drive", "https://drive.google.com/drive/my-drive");
+			addLink("GoogleMaps", "Google Maps", "https://www.google.nl/maps");
+			addLink("drive", "Google Drive", "https://drive.google.com/drive/my-drive");
 			break;
 		case "youtube":
 			addLink("Youtube", "Youtube Home", "https://www.youtube.com/");
@@ -199,16 +199,17 @@ function showAllLinks(key)
 			addLink("Rustage", "Raps", "https://www.youtube.com/playlist?list=PLhzuf4ZRRIuaKeVaSKS1qVt95AqFyeTh0");
 			addLink("Pokemon", "Pokemon Game", "https://www.youtube.com/playlist?list=PLhzuf4ZRRIuaaXMPVI8fkeFFq1y3sza5n");
 			addLink("Nederland", "Nederlands", "https://www.youtube.com/playlist?list=PLhzuf4ZRRIuZP7bAVJt1XuRr9rl4yoIXQ");
-			addLink("", "Great&Dumb", "https://www.youtube.com/playlist?list=PLhzuf4ZRRIuZwntJL1uzRzwJmt1bjFBhK");
-			addLink("Veronica", "Veronica", "http://www.radioveronica.nl/luister/stations/radio-veronica");
+			addLink("Youtube", "Great&Dumb", "https://www.youtube.com/playlist?list=PLhzuf4ZRRIuZwntJL1uzRzwJmt1bjFBhK");
+			addLink("veronica", "Veronica", "http://www.radioveronica.nl/luister/stations/radio-veronica");
 			addLink("juke", "Housuh in de Pauzuh", "https://juke.nl/radiozenders/slam/slam-housuh-in-de-pauzuh");
 			addLink("spotify", "Spotify", "https://open.spotify.com/");
 			break;
 		case "tv":
-			addLink("", "", "");
+			addLink("npo", "NPO start", "https://npo.nl/start/live");
+			addLink("netflix", "Netflix", "https://www.netflix.com/nl/");
 			break;
 		case "anime":
-			addLink("gogoanime", "GOGO Anime", "https://ww8.gogoanimes.fi/");
+			addLink("gogoAnime", "GOGO Anime", "https://ww8.gogoanimes.fi/");
 			addLink("9anime", "9anime", "https://9anime.to/user/watchlist");
 			addLink("mal", "MyAnimeList", "https://myanimelist.net/profile/Antmation");
 			break;
@@ -220,7 +221,7 @@ function showAllLinks(key)
 			addLink("Twitter", "Twitter", "https://twitter.com/");
 			break;
 		case "instagram":
-			addLink("Instagram", "Instagram", "https://www.instagram.com/nuzzle_face");
+			addLink("instagram", "Instagram", "https://www.instagram.com/nuzzle_face");
 			break;
 		case "linkedin":
 			addLink("linkedIn", "LinkedIn", "https://www.linkedin.com/nhome/");
@@ -233,22 +234,22 @@ function showAllLinks(key)
 			break;
 		case "leagueOfLegends":
 			addLink("LeagueOfLegends", "News", "http://euw.leagueoflegends.com/en/news/");
-			addLink("opGG", "OP.GG", "https://euw.ophttps://www.op.gg/summoners/euw/Antmaniac-EUW");
-			addLink("opGG", "Statistics", "https://euw.op.gg/statistics/champion/");
+			addLink("opgg", "OP.GG", "https://euw.ophttps://www.op.gg/summoners/euw/Antmaniac-EUW");
+			addLink("opgg", "Statistics", "https://euw.op.gg/statistics/champion/");
 			addLink("winKans", "Your win chance", "https://www.lolskill.net/game/EUW/antmaniac");
 			break;
 		case "serebii":
-			addLink("Serebii", "Serebii", "http://www.serebii.net/index2.shtml");
-			addLink("Serebii", "Earth", "https://www.serebii.net/pokearth/");
-			addLink("Serebii", "Gen 1", "https://www.serebii.net/pokedex/");
-			addLink("Serebii", "Gen 2", "https://www.serebii.net/pokedex-gs/");
-			addLink("Serebii", "Gen 3", "https://www.serebii.net/pokedex-rs/");
-			addLink("Serebii", "Gen 4", "https://www.serebii.net/pokedex-dp/");
-			addLink("Serebii", "Gen 5", "https://www.serebii.net/pokedex-bw/");
-			addLink("Serebii", "Gen 6", "https://www.serebii.net/pokedex-xy/");
-			addLink("Serebii", "Gen 7", "https://www.serebii.net/pokedex-sm/");
-			addLink("Serebii", "Gen 8", "https://www.serebii.net/pokedex-swsh/");
-			addLink("Serebii", "Gen 9", "https://www.serebii.net/pokedex-sv/");
+			addLink("serebii", "Serebii", "http://www.serebii.net/index2.shtml");
+			addLink("serebii", "Earth", "https://www.serebii.net/pokearth/");
+			addLink("serebii", "Gen 1", "https://www.serebii.net/pokedex/");
+			addLink("serebii", "Gen 2", "https://www.serebii.net/pokedex-gs/");
+			addLink("serebii", "Gen 3", "https://www.serebii.net/pokedex-rs/");
+			addLink("serebii", "Gen 4", "https://www.serebii.net/pokedex-dp/");
+			addLink("serebii", "Gen 5", "https://www.serebii.net/pokedex-bw/");
+			addLink("serebii", "Gen 6", "https://www.serebii.net/pokedex-xy/");
+			addLink("serebii", "Gen 7", "https://www.serebii.net/pokedex-sm/");
+			addLink("serebii", "Gen 8", "https://www.serebii.net/pokedex-swsh/");
+			addLink("serebii", "Gen 9", "https://www.serebii.net/pokedex-sv/");
 			break;
 		case "pokemon":
 			addLink("Bulbapedia", "Bulbapedia", "http://bulbapedia.bulbagarden.net/wiki/Main_Page");
@@ -257,7 +258,7 @@ function showAllLinks(key)
 			addLink("pokemon", "Abilities", "https://pokemon.fandom.com/wiki/Pok%C3%A9mon_Abilities");
 			addLink("pokemoncries", "Pokemon Cries", "https://pokemoncries.com/train");
 			addLink("marriland", "Team Builder", "https://marriland.com/tools/team-builder/en/");
-			addLink("Drive", "Files", "https://drive.google.com/drive/folders/16bSaqcst0tOMsz4rGBzPK_iZvgx4DZJX");
+			addLink("drive", "Files", "https://drive.google.com/drive/folders/16bSaqcst0tOMsz4rGBzPK_iZvgx4DZJX");
 			addLink("pokesprite", "Sprites", "https://msikma.github.io/pokesprite/index.html");
 			addLink("pmdcollab", "pmdcollab", "https://sprites.pmdcollab.org/#/");
 			break;
@@ -267,7 +268,7 @@ function showAllLinks(key)
 			break;
 		case "programming":
 			addLink("xampp", "PHP MyAdmin", "http://localhost/phpmyadmin/");
-			addLink("Github", "Github", "https://github.com/");
+			addLink("github", "Github", "https://github.com/");
 			addLink("Regex", "Regex101", "https://regex101.com/");
 			break;
 		case "grownup":
