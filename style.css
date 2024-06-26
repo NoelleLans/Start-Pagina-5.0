@@ -1,0 +1,455 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: "Segoe UI",Arial,sans-serif;
+}
+
+body{
+    background-color: #4290DE;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.top{
+    display: flex;
+    width: 100%;
+    height: 62vh;
+    border-bottom: 0.2vw solid black;
+}
+
+.top .topleft{
+    border-right: 0.2vw solid black;
+    background-color: #5F6F7E;
+    width: 20%;
+}
+
+.top .topright{
+    width: 80%;
+}
+
+.sitelogo{
+    height: 10%;
+    border-bottom: 0.2vw solid black;
+    background-color: #049560;
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', cursive;
+    padding: 0.3vw 0vw 0.5vw;
+    line-height: 1;
+    cursor: default;
+}
+
+.allLinks{
+    background-color: #5F6F7E;
+    height: 90%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.allLinks::-webkit-scrollbar {
+    display: none;
+}
+
+.allLinks .link{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: #4290DE;
+	width: 100%;
+	height: 7vh;
+	border-bottom: 0.1vh solid black;
+	color: white;
+	overflow: hidden;
+    text-decoration: none;
+}
+
+.allLinks .link .linkImage{
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	width: 6vh;
+	height: 6vh;
+	margin-top: 0.5vh;
+	margin-left: 0.5vh;
+	margin-right: 1.25vh;
+}
+
+.allLinks .link .linkTextHolder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% - 7.75vh);
+}
+
+.allLinks .link .linkTextHolder .linkText{
+    overflow: hidden;
+    white-space: nowrap;
+	font-size: 3.7vh;
+}
+
+.allLinks .link .linkTextHolder .linkURL{
+    overflow: hidden;
+    white-space: nowrap;
+	font-size: 1.2vh;
+    margin-bottom: 0.2vh;
+}
+
+.linkIcons{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.9vw;
+    padding: 0.9vw 0px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.linkIcons::-webkit-scrollbar {
+    display: none;
+}
+
+.linkIcons .linkIcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 8.3vw;
+    width: 9vw;
+    padding: 0.4vw 0vw 0.4vw;
+    background-color: rgba(102, 102, 102, 0.8);
+    cursor: pointer;
+}
+
+.linkIcons .linkIcon .linkIconImage{
+    background-size: 6vw 6vw;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    width: 6vw;
+    height: 6vw;
+}
+
+.linkIcons .linkIcon .linkIconName{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1vw;
+}
+
+
+
+.bottom{
+    display: flex;
+    width: 100%;
+    height: 38vh;
+}
+
+.notepadHolder{
+    border-right: 0.2vw solid black;
+    width: 30.35%;
+    background-color: #67a6e4;
+}
+
+.notepadText{
+	width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    font-size: 1.8vh;
+    padding: 0.3vh;
+    background-color: transparent;
+    outline: none;
+}
+
+.animes{
+    border-right: 0.2vw solid black;
+    width: 29.75%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow-y: scroll;
+}
+.animes::-webkit-scrollbar {
+    display: none;
+}
+
+.animes .anime{
+    border-bottom: 0.11vw solid black;
+    display: flex;
+    align-items: stretch;
+}
+
+.animes .anime .animeNumber{
+    border-right: 0.11vw solid black;
+    display: flex;
+    align-items: center;
+    font-size: 1.3vw;
+    padding: 0vw 0.7vw;
+}
+
+.animes .anime .animeLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 60%;
+}
+
+.animes .anime .animeLeft input{
+    font-size: 1vw;
+    margin: 0.2vw;
+    border: 0px;
+    padding: 0.1vw 0.4vw 0.3vw;
+    box-shadow: inset 0px 0px 3px 3px #4290DE;
+}
+.animes .anime .animeLeft input::placeholder{
+    color: #cccccc;
+}
+
+.animes .anime .animeRight{
+    display: flex;
+    align-items: center;
+}
+
+.animes .anime .animeRight .animeWatch{
+    background-color: #ff751a;
+    color: white;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    outline: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
+    padding: 0.5vw 2.1vw 0.6vw;
+    line-height: 1;
+    border-radius: 3px;
+    margin: 0vw 0.5vw;
+    font-size: 1vw;
+}
+.animes .anime .animeRight .animeWatch:hover{
+    background-color: #ff8533;
+}
+.animes .anime .animeRight .animeWatch:active{
+    background-color: #993d00;
+}
+
+.animes .anime .animeRight .animePlus{
+    width: 1.1vw;
+    height: 1.4vw;
+    cursor: pointer;
+}
+
+.copies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 1vw;
+    row-gap: 0.75vw;
+    padding: 0.5vw 0.25vw 1vw;
+    border-right: 0.2vw solid black;
+    width: 9.88%;
+    background-color: #67a6e4;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.copies::-webkit-scrollbar {
+    display: none;
+}
+
+.copies div{
+    background-color: #049560;
+    font-size: 1.3vw;
+    padding: 0.3vw 0.6vw;
+    border-radius: 0.5vw;
+    line-height: 1;
+    cursor: pointer;
+}
+.copies div:hover{
+    background-color: white;
+}
+
+.pokemons{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bed9f4;
+}
+
+.pokemons .randomPokemonTitle{
+    font-size: 1.6vw;
+}
+
+.pokemons .randomPokemonName{
+    font-size: 2vw;
+    font-weight: bold;
+    margin-top: -0.5vw;
+    z-index: 2;
+    text-transform: capitalize;
+}
+
+.pokemons .randomPokemonImage{
+    width: 12vw;
+    height: 12vw;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-top: -0.75vw;
+    z-index: 1;
+
+    -webkit-filter: drop-shadow(0px -2px 17px black);
+    filter: drop-shadow(0px -2px 17px black);
+}
+
+.pokemons .randomPokemonField{
+    width: 22vw;
+    height: 1vw;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: -0.85vw;
+    box-shadow: 0px -1px 9px black;
+}
+
+.pokemons .randomPokemonData{
+    margin-top: auto;
+    margin-bottom: 0.3vw;
+    font-size: 0.85vw;
+}
+
+.pokemons .randomPokemonDataName{
+    text-transform: capitalize;
+}
+
+
+
+
+
+#linkIconImageYoutube{
+    background-image: url(img/icons/youtube.png);
+}
+
+#linkIconImageYoutubeAnalytics{
+    background-image: url(img/icons/socialBlade.png);
+}
+
+#linkIconImageYoutubeTools{
+    background-image: url(img/icons/youtubeTools.png);
+}
+
+#linkIconImageGoogle{
+    background-image: url(img/icons/google.png);
+}
+
+#linkIconImageTools{
+    background-image: url(img/icons/tools.png);
+}
+
+#linkIconImageLeagueOfLegends{
+    background-image: url(img/icons/leagueoflegends.png);
+}
+
+#linkIconImageSerebii{
+    background-image: url(img/icons/serebii.png);
+}
+
+#linkIconImagePokemon{
+    background-image: url(img/icons/Bulbapedia.png);
+}
+
+#linkIconImageWeather{
+    background-image: url(img/icons/Buienradar.png);
+}
+
+#linkIconImageShop{
+    background-image: url(img/icons/shop.png);
+}
+
+#linkIconImageAnime{
+    background-image: url(img/icons/Illoka.png);
+}
+
+#linkIconImageTwitch{
+    background-image: url(img/icons/twitch.png);
+}
+
+#linkIconImageTwitter{
+    background-image: url(img/icons/twitter.png);
+}
+
+#linkIconImageInstagram{
+    background-image: url(img/icons/instagram.png);
+}
+
+#linkIconImageLinkedin{
+    background-image: url(img/icons/linkedIn.png);
+}
+
+#linkIconImageWhatsapp{
+    background-image: url(img/icons/whatsapp.png);
+}
+
+#linkIconImageMusic{
+    background-image: url(img/icons/music.png);
+}
+
+#linkIconImageProgramming{
+    background-image: url(img/icons/xampp.png);
+}
+
+#linkIconImageGrownup{
+    background-image: url(img/icons/Rabobank.png);
+}
+
+#linkIconImageOnePiece{
+    background-image: url(img/icons/onePiece.png);
+}
+
+#linkIconImageGames{
+    background-image: url(img/icons/schaken.png);
+}
+
+#linkIconImageColor{
+    background-image: url(img/icons/kleuren.png);
+}
+
+#linkIconImageNuzzling{
+    background-image: url(img/icons/nuzzling.png);
+}
+
+#linkIconImageNews{
+    background-image: url(img/icons/nunl.png);
+}
+
+#linkIconImageHuizen{
+    background-image: url(img/icons/huizen.png);
+}
+
+#linkIconImageTrans{
+    background-image: url(img/icons/trans.png);
+}
+
+#linkIconImageTV{
+    background-image: url(img/icons/tv.png);
+}
+
+#linkIconImageWork{
+    background-image: url(img/icons/work.png);
+}
+
+#linkIconImageWonen{
+    background-image: url(img/icons/wonen.png);
+}
+
+#linkIconImageAdobe{
+    background-image: url(img/icons/adobe.png);
+}

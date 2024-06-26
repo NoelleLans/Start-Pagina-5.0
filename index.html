@@ -1,1 +1,345 @@
-hi
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<script type="text/javascript" src="js/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<meta name="author" content="Noelle van der Lans">
+	<meta charset="utf-8">
+	<title>Nieuwe pagina 5.0</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="img/ChromeIcon.ico">
+</head>
+<body>
+    <div class="top">
+        <div class="topleft">
+            <div class="sitelogo">
+                New Tab 5.0
+            </div>
+            <div class="allLinks">
+
+            </div>
+        </div>
+        <div class="topright">
+            <div class="linkIcons">
+                <div id="currentLink" style="display: none;"></div>
+                <div class="linkIcon" data-key="google">
+                    <div class="linkIconImage" id="linkIconImageGoogle"></div>
+                    <div class="linkIconName">Google</div>
+                </div>
+
+                <div class="linkIcon" data-key="youtube">
+                    <div class="linkIconImage" id="linkIconImageYoutube"></div>
+                    <div class="linkIconName">Youtube</div>
+                </div>
+
+                <div class="linkIcon" data-key="youtubeAnalytics">
+                    <div class="linkIconImage" id="linkIconImageYoutubeAnalytics"></div>
+                    <div class="linkIconName">YT Analytics</div>
+                </div>
+
+                <div class="linkIcon" data-key="youtubeTools">
+                    <div class="linkIconImage" id="linkIconImageYoutubeTools"></div>
+                    <div class="linkIconName">YT Tools</div>
+                </div>
+
+                <div class="linkIcon" data-key="tools">
+                    <div class="linkIconImage" id="linkIconImageTools"></div>
+                    <div class="linkIconName">Tools</div>
+                </div>
+
+                <div class="linkIcon" data-key="news">
+                    <div class="linkIconImage" id="linkIconImageNews"></div>
+                    <div class="linkIconName">News</div>
+                </div>
+
+                <div class="linkIcon" data-key="weather">
+                    <div class="linkIconImage" id="linkIconImageWeather"></div>
+                    <div class="linkIconName">Weather</div>
+                </div>
+
+                <div class="linkIcon" data-key="shop">
+                    <div class="linkIconImage" id="linkIconImageShop"></div>
+                    <div class="linkIconName">Shop</div>
+                </div>
+
+
+                <div class="linkIcon" data-key="music">
+                    <div class="linkIconImage" id="linkIconImageMusic"></div>
+                    <div class="linkIconName">Music</div>
+                </div>
+
+                <div class="linkIcon" data-key="tv">
+                    <div class="linkIconImage" id="linkIconImageTV"></div>
+                    <div class="linkIconName">TV</div>
+                </div>
+
+                <div class="linkIcon" data-key="anime">
+                    <div class="linkIconImage" id="linkIconImageAnime"></div>
+                    <div class="linkIconName">Anime</div>
+                </div>
+
+                <div class="linkIcon" data-key="twitch">
+                    <div class="linkIconImage" id="linkIconImageTwitch"></div>
+                    <div class="linkIconName">Twitch</div>
+                </div>
+
+                <div class="linkIcon" data-key="twitter">
+                    <div class="linkIconImage" id="linkIconImageTwitter"></div>
+                    <div class="linkIconName">Twitter</div>
+                </div>
+
+                <div class="linkIcon" data-key="instagram">
+                    <div class="linkIconImage" id="linkIconImageInstagram"></div>
+                    <div class="linkIconName">Instagram</div>
+                </div>
+
+                <div class="linkIcon" data-key="linkedin">
+                    <div class="linkIconImage" id="linkIconImageLinkedin"></div>
+                    <div class="linkIconName">LinkedIn</div>
+                </div>
+
+                <div class="linkIcon" data-key="whatsapp">
+                    <div class="linkIconImage" id="linkIconImageWhatsapp"></div>
+                    <div class="linkIconName">Whatsapp</div>
+                </div>
+
+
+                <div class="linkIcon" data-key="games">
+                    <div class="linkIconImage" id="linkIconImageGames"></div>
+                    <div class="linkIconName">Games</div>
+                </div>
+
+                <div class="linkIcon" data-key="leagueOfLegends">
+                    <div class="linkIconImage" id="linkIconImageLeagueOfLegends"></div>
+                    <div class="linkIconName">League</div>
+                </div>
+
+                <div class="linkIcon" data-key="serebii">
+                    <div class="linkIconImage" id="linkIconImageSerebii"></div>
+                    <div class="linkIconName">Serebii</div>
+                </div>
+
+                <div class="linkIcon" data-key="pokemon">
+                    <div class="linkIconImage" id="linkIconImagePokemon"></div>
+                    <div class="linkIconName">Pokemon</div>
+                </div>
+
+                <div class="linkIcon" data-key="nuzzling">
+                    <div class="linkIconImage" id="linkIconImageNuzzling"></div>
+                    <div class="linkIconName">Nuzzling</div>
+                </div>
+
+                <div class="linkIcon" data-key="programming">
+                    <div class="linkIconImage" id="linkIconImageProgramming"></div>
+                    <div class="linkIconName">Programming</div>
+                </div>
+
+                <div class="linkIcon" data-key="grownup">
+                    <div class="linkIconImage" id="linkIconImageGrownup"></div>
+                    <div class="linkIconName">Grown up stuff</div>
+                </div>
+
+                <div class="linkIcon" data-key="color">
+                    <div class="linkIconImage" id="linkIconImageColor"></div>
+                    <div class="linkIconName">Color</div>
+                </div>
+
+
+                <div class="linkIcon" data-key="onePiece">
+                    <div class="linkIconImage" id="linkIconImageOnePiece"></div>
+                    <div class="linkIconName">One Piece</div>
+                </div>
+
+                <div class="linkIcon" data-key="work">
+                    <div class="linkIconImage" id="linkIconImageWork"></div>
+                    <div class="linkIconName">Work</div>
+                </div>
+
+                <div class="linkIcon" data-key="wonen">
+                    <div class="linkIconImage" id="linkIconImageWonen"></div>
+                    <div class="linkIconName">Wonen</div>
+                </div>
+
+                <div class="linkIcon" data-key="huizen">
+                    <div class="linkIconImage" id="linkIconImageHuizen"></div>
+                    <div class="linkIconName">Huizen</div>
+                </div>
+
+                <div class="linkIcon" data-key="trans">
+                    <div class="linkIconImage" id="linkIconImageTrans"></div>
+                    <div class="linkIconName">Trans</div>
+                </div>
+
+                <div class="linkIcon" data-key="adobe">
+                    <div class="linkIconImage" id="linkIconImageAdobe"></div>
+                    <div class="linkIconName">Adobe</div>
+                </div>
+
+                <div class="linkIcon" data-key="2">
+                    <div class="linkIconImage" id="linkIconImage"></div>
+                    <div class="linkIconName"></div>
+                </div>
+
+                <div class="linkIcon" data-key="3">
+                    <div class="linkIconImage" id="linkIconImage"></div>
+                    <div class="linkIconName"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="notepadHolder">
+            <textarea placeholder="This notepad is empty, feel free to write something." class="notepadText"></textarea>
+        </div>
+        <div class="animes">
+            <div class="anime" data-number="1">
+                <div class="animeNumber">1</div>
+                <div class="animeLeft">
+                    <input class="animeName" placeholder="anime">
+                    <input class="animeEpisode" placeholder="episode">
+                </div>
+                <div class="animeRight">
+                    <a class="animeWatch">Watch</a>
+                    <input type="checkbox" checked class="animePlus">
+                </div>
+            </div>
+            <div class="anime" data-number="2">
+                <div class="animeNumber">2</div>
+                <div class="animeLeft">
+                    <input class="animeName" placeholder="anime">
+                    <input class="animeEpisode" placeholder="episode">
+                </div>
+                <div class="animeRight">
+                    <a class="animeWatch">Watch</a>
+                    <input type="checkbox" checked class="animePlus">
+                </div>
+            </div>
+            <div class="anime" data-number="3">
+                <div class="animeNumber">3</div>
+                <div class="animeLeft">
+                    <input class="animeName" placeholder="anime">
+                    <input class="animeEpisode" placeholder="episode">
+                </div>
+                <div class="animeRight">
+                    <a class="animeWatch">Watch</a>
+                    <input type="checkbox" checked class="animePlus">
+                </div>
+            </div>
+            <div class="anime" data-number="4">
+                <div class="animeNumber">4</div>
+                <div class="animeLeft">
+                    <input class="animeName" placeholder="anime">
+                    <input class="animeEpisode" placeholder="episode">
+                </div>
+                <div class="animeRight">
+                    <a class="animeWatch">Watch</a>
+                    <input type="checkbox" checked class="animePlus">
+                </div>
+            </div>
+            <div class="anime" data-number="5">
+                <div class="animeNumber">5</div>
+                <div class="animeLeft">
+                    <input class="animeName" placeholder="anime">
+                    <input class="animeEpisode" placeholder="episode">
+                </div>
+                <div class="animeRight">
+                    <a class="animeWatch">Watch</a>
+                    <input type="checkbox" checked class="animePlus">
+                </div>
+            </div>
+            <div class="anime" data-number="6">
+                <div class="animeNumber">6</div>
+                <div class="animeLeft">
+                    <input class="animeName" placeholder="anime">
+                    <input class="animeEpisode" placeholder="episode">
+                </div>
+                <div class="animeRight">
+                    <a class="animeWatch">Watch</a>
+                    <input type="checkbox" checked class="animePlus">
+                </div>
+            </div>
+            <div class="anime" data-number="7">
+                <div class="animeNumber">7</div>
+                <div class="animeLeft">
+                    <input class="animeName" placeholder="anime">
+                    <input class="animeEpisode" placeholder="episode">
+                </div>
+                <div class="animeRight">
+                    <a class="animeWatch">Watch</a>
+                    <input type="checkbox" checked class="animePlus">
+                </div>
+            </div>
+            <div class="anime" data-number="8">
+                <div class="animeNumber">8</div>
+                <div class="animeLeft">
+                    <input class="animeName" placeholder="anime">
+                    <input class="animeEpisode" placeholder="episode">
+                </div>
+                <div class="animeRight">
+                    <a class="animeWatch">Watch</a>
+                    <input type="checkbox" checked class="animePlus">
+                </div>
+            </div>
+            <div class="anime" data-number="9">
+                <div class="animeNumber">9</div>
+                <div class="animeLeft">
+                    <input class="animeName" placeholder="anime">
+                    <input class="animeEpisode" placeholder="episode">
+                </div>
+                <div class="animeRight">
+                    <a class="animeWatch">Watch</a>
+                    <input type="checkbox" checked class="animePlus">
+                </div>
+            </div>
+            <div class="anime" data-number="0">
+                <div class="animeNumber">0</div>
+                <div class="animeLeft">
+                    <input class="animeName" placeholder="anime">
+                    <input class="animeEpisode" placeholder="episode">
+                </div>
+                <div class="animeRight">
+                    <a class="animeWatch">Watch</a>
+                    <input type="checkbox" checked class="animePlus">
+                </div>
+            </div>
+        </div>
+        <div class="copies">
+            <div>Noëlle</div>
+            <div>ë</div>
+            <div>é</div>
+            <div>è</div>
+            <div>pokémon</div>
+            <div>Pokémon</div>
+            <div>€</div>
+            <div>$</div>
+            <div>£</div>
+            <div>ö</div>
+            <div>ó</div>
+            <div>ø</div>
+            <div>necessary</div>
+            <div>necessarily</div>
+            <div>¯\_(ツ)_/¯</div>
+            <div>( ͡° ͜ʖ ͡°)</div>
+            <div>ä</div>
+            <div>á</div>
+            <div>à</div>
+        </div>
+        <div class="pokemons">
+            <div class="randomPokemonTitle">You have encountered:</div>
+            <div class="randomPokemonName">Tauros</div>
+            <div class="randomPokemonImage" style="background-image: url(https://img.pokemondb.net/sprites/home/normal/salamence.png);"></div>
+            <div class="randomPokemonField"></div>
+            <div class="randomPokemonData">
+                <span class="randomPokemonDataNumber">#294</span>
+                |
+                <span class="randomPokemonDataName">Tauros</span>
+                |
+                <span class="randomPokemonDataLevel">Level 100</span>
+                |
+                <span class="randomPokemonDataShiny">Not shiny</span>
+            </div>
+        </div>
+    </div>
+
+
+</body>
