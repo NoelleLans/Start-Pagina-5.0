@@ -173,8 +173,8 @@ function showAllLinks(key)
 			addLink("removeBG", "remove.bg", "https://www.remove.bg/");
 			break;
 		case "news":
-			addLink("nunl", "Nu.nl", "https://112duinenbollenstreek.nl/");
-			addLink("112duinenbollenstreek", "112duinenbollenstreek", "");
+			addLink("nunl", "Nu.nl", "https://www.nu.nl/");
+			addLink("112duinenbollenstreek", "112bollenstreek", "https://112duinenbollenstreek.nl/");
 			break;
 		case "weather":
 			addLink("Buienradar", "Buienradar", "http://www.buienradar.nl/");
@@ -216,6 +216,7 @@ function showAllLinks(key)
 		case "twitch":
 			addLink("twitch", "Twitch", "https://www.twitch.tv/directory/following");
 			addLink("nuzzle", "Nuzzle", "https://www.twitch.tv/nuzzle_face");
+			addLink("streamlabs", "Streamlabs", "https://streamlabs.com/dashboard");
 			break;
 		case "twitter":
 			addLink("Twitter", "Twitter", "https://twitter.com/");
@@ -292,6 +293,7 @@ function showAllLinks(key)
 			break;
 		case "work":
 			addLink("nmbrs", "nmbrs", "https://ffivebv.nmbrs.nl/");
+			addLink("nn", "NN", "https://www.nn.nl/");
 			break;
 		case "wonen":
 			addLink("oxxio", "Oxxio", "https://www.oxxio.nl/");
@@ -372,6 +374,8 @@ function showPokemon(pokemon, number, level, shiny)
 	pokemonImageName = pokemonImageName.replace(".", "");
 	pokemonImageName = pokemonImageName.replace(":", "");
 	pokemonImageName = pokemonImageName.replace("`", "");
+	pokemonImageName = pokemonImageName.replace("♂", "-m");
+	pokemonImageName = pokemonImageName.replace("♀", "-f");
 	switch(pokemonImageName) {
 		case "ogerpon":
 			pokemonImageName = "ogerpon-teal";
